@@ -1,0 +1,68 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 50px 100px 1fr 100px 100px;
+  grid-template-columns: 1fr 100px;
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "ads ads"
+    "footer footer";
+}
+
+.header-container {
+  grid-area: header;
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+.nav-container {
+  grid-area: nav;
+  text-align: center;
+  border: 1px dashed yellow;
+}
+
+.display-container {
+  grid-area: main;
+  border: 1px dashed red;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ads-container {
+  grid-area: ads;
+  border: 1px dashed blue;
+}
+
+.footer-container {
+  grid-area: footer;
+  border: 1px dashed purple;
+}
+
+.item-container {
+  border: 3px dashed green;
+  width: 25%
+}
+
+.item-img {
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.item-img img {
+  border: 2px solid red;
+  width: 100%;
+}
+
+.item-info {
+  font-size: 12px;
+}

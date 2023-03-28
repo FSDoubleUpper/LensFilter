@@ -28,6 +28,11 @@
   border: 1px dashed yellow;
 }
 
+.focalrange-container input {
+  text-align: right;
+  width: 4ch;
+}
+
 .display-container {
   grid-area: main;
   border: 1px dashed red;

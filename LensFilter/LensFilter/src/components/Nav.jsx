@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
+import Brands from './Brands';
+import FocalRange from './FocalRange';
+import Aperture from './Aperture';
 
 const Nav = () => {
-  const [selectedOption, setSelectedOption] = useState('');
-  const handleChange = e => setSelectedOption(e.target.value);
   return (
     <div className='nav-container'>
         <div>Settings</div>
         <div>
-          <select value={selectedOption} onChange={handleChange}>
-            <option value="">Brand</option>
-            <option value="Sony">Sony</option>
-            <option value="Fujifilm">Fujifilm</option>
-          </select>
+          <Brands />
+          <FocalRange />
+          <Aperture />
         </div>
     </div>
   )

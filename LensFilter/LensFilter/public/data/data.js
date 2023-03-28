@@ -1,5 +1,6 @@
 export const lensData = [
     {
+        id: 1,
         imageFile: "../brands/Fujifilm/lenses/xf_18mm_f1.4.avif",
         company: "Fujifilm",
         sensorSize: "APS-C",
@@ -51,6 +52,7 @@ export const lensData = [
         ]
     },
     {
+        id: 2,
         imageFile: "../brands/Fujifilm/lenses/xf_70-300mm_f4-5.6.webp",
         company: "Fujifilm",
         sensorSize: "APS-C",
@@ -99,6 +101,7 @@ export const lensData = [
         ]
     },
     {
+        id: 3,
         imageFile: "../brands/Fujifilm/lenses/xf_23mm_f1.4.webp",
         company: "Fujifilm",
         sensorSize: "APS-C",
@@ -147,6 +150,7 @@ export const lensData = [
         ]
     },
     {
+        id: 4,
         imageFile: "../brands/Fujifilm/lenses/xf_23mm_f2.jpg",
         company: "Fujifilm",
         sensorSize: "APS-C",
@@ -197,6 +201,7 @@ export const lensData = [
         ]
     },
     {
+        id: 5,
         imageFile: "../brands/Fujifilm/lenses/xf_150-600mm_f5.6-8.webp",
         company: "Fujifilm",
         sensorSize: "APS-C",

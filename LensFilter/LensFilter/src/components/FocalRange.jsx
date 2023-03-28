@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-const FocalRange = () => {
-    const [selectedOption, setSelectedOption] = useState("");
-    const handleChange = (e) => setSelectedOption(e.target.value);
+const FocalRange = (props) => {
     return (
         <div className="focalrange-container">
             <span>Min: </span>
@@ -10,14 +8,16 @@ const FocalRange = () => {
                 type="text"
                 value=""
                 placeholder="18"
-                onChange={handleChange}
+                onChange={props.handleChange}
             />
-            <span>mm Max: </span>
+            mm
+            <br />
+            <span>Max: </span>
             <input
                 type="text"
                 value=""
                 placeholder="200"
-                onChange={handleChange}
+                onChange={props.handleChange}
             />
             <span>mm</span>
         </div>

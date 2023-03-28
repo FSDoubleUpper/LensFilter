@@ -6,12 +6,12 @@
 .App {
   display: grid;
   grid-template-rows: 50px 100px 1fr 100px 100px;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 150px 1fr;
   grid-template-areas: 
     "header header"
-    "nav nav"
-    "main main"
-    "ads ads"
+    "nav main"
+    "nav main"
+    "nav ads"
     "footer footer";
 }
 
@@ -24,8 +24,18 @@
 
 .nav-container {
   grid-area: nav;
+  font-size: small;
+  background-color: rgb(25, 25, 25);
+  overflow: auto;
+}
+
+.nav-title {
   text-align: center;
-  border: 1px dashed yellow;
+  margin-bottom: 10px;
+}
+
+.brands-container {
+  text-align: left;
 }
 
 .focalrange-container input {
@@ -33,9 +43,14 @@
   width: 4ch;
 }
 
+.options-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .display-container {
   grid-area: main;
-  border: 1px dashed red;
+  background-color: #181818;
 }
 
 .main {
@@ -45,12 +60,12 @@
 
 .ads-container {
   grid-area: ads;
-  border: 1px dashed blue;
+  background-color: #011;
 }
 
 .footer-container {
   grid-area: footer;
-  border: 1px dashed purple;
+  background-color: #151515;
 }
 
 .item-container {

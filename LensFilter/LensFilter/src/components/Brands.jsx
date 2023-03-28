@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
 
-const Brands = () => {
-    const [selectedOption, setSelectedOption] = useState("");
-    const handleChange = (e) => setSelectedOption(e.target.value);
+const Brands = (props) => {
     return (
-        <div>
-            <select value={selectedOption} onChange={handleChange}>
-                <option value="">Brand</option>
+        <div className='brands-container'>
+            <span>Brands: </span>
+            <select value={props.selectedOption} onChange={props.handleChange}>
+                <option value="All">All</option>
                 <option value="Sony">Sony</option>
                 <option value="Fujifilm">Fujifilm</option>
             </select>

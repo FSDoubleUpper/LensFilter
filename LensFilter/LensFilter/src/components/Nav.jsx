@@ -7,15 +7,35 @@ import Options from "./Options";
 const Nav = () => {
     const [selectedOption, setSelectedOption] = useState("");
     const handleChange = (e) => setSelectedOption(e.target.value);
+    const [filter, setFilter] = useState({
+      brands: ""
+    });
+
+    const onfilter = 
 
     return (
         <div className="nav-container">
             <div className="nav-title">Settings</div>
             <div className="nav-options">
-                <Brands selectedOption={selectedOption} handleChange={handleChange} />
-                <FocalRange selectedOption={selectedOption} handleChange={handleChange} />
-                <Aperture selectedOption={selectedOption} handleChange={handleChange} />
-                <Options selectedOption={selectedOption} handleChange={handleChange} />
+                <Brands
+                    selected={setFilter}
+                    handleChange={handleChange}
+                />
+                <FocalRange
+                    selectedOption={selectedOption}
+                    handleChange={handleChange}
+                />
+                <Aperture
+                    selectedOption={selectedOption}
+                    handleChange={handleChange}
+                />
+                <Options
+                    selectedOption={selectedOption}
+                    handleChange={handleChange}
+                />
+            </div>
+            <div className="nav-filter-button">
+                <button onClick={onfilter}>Filter</button>
             </div>
         </div>
     );

@@ -34,6 +34,28 @@
   margin-bottom: 10px;
 }
 
+.nav-filter-button {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.nav-filter-button button {
+  background-color: cornflowerblue;
+  color: black;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 25px;
+}
+
+.nav-filter-button button:hover {
+  background-color:darkcyan;
+  color: white;
+}
+
+.nav-filter-button button:active {
+  background-color: rgb(0, 100, 100);
+}
+
 .brands-container {
   text-align: left;
 }
